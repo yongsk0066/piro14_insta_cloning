@@ -165,8 +165,9 @@ body {
 
 .content__container {
     display: grid;
-    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr/[first] 1fr [second] 1fr [third] 1fr [fourth];
     grid-gap: 3px;
+    
 }
 
 .content__photo >img {
@@ -203,4 +204,4 @@ body {
     padding: 2px;
     border: var(--main-border);
     border-radius: 100%;
-}
+} 
